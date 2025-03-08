@@ -221,9 +221,17 @@ def main():
     input_file = 'input.txt'
     output_file = 'Router_Configuration.yaml'
 
+    # Dosyayı oku ve bağlantıları ve router'ları al
     connections, routers = read_input_file(input_file)
+    
+    # YAML yapısını oluştur
     yaml_structure = create_yaml_structure(connections, routers)
+    
+    # YAML dosyasını yaz
     write_yaml_file(yaml_structure, output_file)
+    
+    # Başarı mesajı
+    print("Successfully created Router_Configuration.yaml file!")
 
 if __name__ == "__main__":
     main()
