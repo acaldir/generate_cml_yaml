@@ -35,9 +35,23 @@ Imagine you are designing a network with 10 routers and 5 switches, all intercon
 
 You define the connections in input.txt:
 
-r1 e0/0 r2 e0/0
-r1 e0/1 r3 e0/0
-s1 e0/0 r4 e0/1
+<pre>
+$ <b>
+Device     Interface  Remote Device   Remote Interface
+r1         e0/0       r2              e0/0
+r1         e0/1       r3              e0/0
+r2         e0/1       r4              e0/0
+r3         e0/1       r5              e0/0
+s1         e0/0       r4              e0/1
+s1         e0/1       r5              e0/1
+s1         e0/2       r6              e0/0
+s1         e0/3       r7              e0/0
+r1         e0/2       R8              g0/1
+R9         g0/0       R8              g0/0
+S2         g0/0       R8              g0/2
+S2         g0/1       R9              g0/1
+</b>
+</pre>
 
 You run the Python script, which generates a YAML file (Router_Configuration.yaml).
 
