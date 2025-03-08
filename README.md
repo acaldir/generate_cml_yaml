@@ -82,7 +82,5 @@ Here is an image from the example lab network diagram JPG file:
 $ <b>python3 cml_router_generator.py</b>
 </pre>
 
-4\. 
-<pre>
-You import the YAML file into CML, and the topology is created automatically.
-</pre>
+4\. You import the YAML file into CML, and the topology is created automatically.
+
