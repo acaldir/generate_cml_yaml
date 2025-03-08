@@ -22,7 +22,7 @@ cisco-iol         x86_64_crb_linux-adventerprisek9-ms.iol
 cisco-iol2        x86_64_crb_linux_l2-adventerprisek9-ms.iol
 </pre>
 
-# 1. Automating Topology Creation
+# Automating Topology Creation
 CML allows you to create network topologies manually using its graphical user interface (GUI). However, for large or complex topologies, manually adding devices, connections, and configurations can be time-consuming and error-prone. This Python script automates the process by:
 
 1 - Reading a simple text file (input.txt) that defines the connections between devices.
@@ -34,6 +34,15 @@ This saves a lot of time, especially when dealing with large-scale networks.
 Imagine you are designing a network with 10 routers and 5 switches, all interconnected in a specific way. Instead of manually adding each device and connection in CML:
 
 You define the connections in input.txt:
+
+For routers:
+
+Routers starting with "r" should have node_definition: iol-xe.
+Routers starting with "R" should have node_definition: iosv.
+For switches:
+
+Switches starting with "s" should have node_definition: ioll2-xe.
+Switches starting with "S" should have node_definition: iosvl2.
 
 <pre>
 $ <b>
