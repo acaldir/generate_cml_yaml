@@ -84,5 +84,5 @@ $ <b>python3 cml_router_generator.py</b>
 
 4\. 
 <pre>
-$ <b>You import the YAML file into CML, and the topology is created automatically.</b>
+You import the YAML file into CML, and the topology is created automatically.
 </pre>
