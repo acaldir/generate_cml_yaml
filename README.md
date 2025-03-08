@@ -76,8 +76,13 @@ S2         g0/1       R9              g0/1
 Here is an image from the example lab network diagram JPG file:
 ![Example Network Diagram](example-network-diagram.jpg)
 
-You run the Python script, which generates a YAML file (Router_Configuration.yaml).
+3\. Run the Python script, which generates a YAML file (Router_Configuration.yaml).
+ 
+<pre>
+$ <b>python3 cml_router_generator.py</b>
+</pre>
 
-You import the YAML file into CML, and the topology is created automatically.
-
-This process is much faster and less error-prone than doing it manually.
+4\. 
+<pre>
+$ <b>You import the YAML file into CML, and the topology is created automatically.</b>
+</pre>
