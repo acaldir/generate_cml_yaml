@@ -35,12 +35,11 @@ Imagine you are designing a network with 10 routers and 5 switches, all intercon
 
 You define the connections in input.txt:
 
-For routers:
-
+1 - For routers:
 Routers starting with "r" should have node_definition: iol-xe.
 Routers starting with "R" should have node_definition: iosv.
-For switches:
 
+2 - For switches:
 Switches starting with "s" should have node_definition: ioll2-xe.
 Switches starting with "S" should have node_definition: iosvl2.
 
