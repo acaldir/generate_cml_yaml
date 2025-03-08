@@ -45,7 +45,16 @@ $ <b>For switches:</b>
 Switches starting with "s" should have node_definition: ioll2-xe.
 Switches starting with "S" should have node_definition: iosvl2.
 </pre>
+## Steps
 
+1\. Clone this GitHub repo and _cd_ into the directory.
+
+<pre>
+$ <b>git clone https://github.com/acaldir/generate_cml_yaml.git</b>
+$ <b>cd generate_cml_yaml</b>
+</pre>
+
+2\. Create a router connections on input.txt as you can see as a example.
 <pre>
 $ <b>
 Device     Interface  Remote Device   Remote Interface
@@ -63,6 +72,9 @@ S2         g0/0       R8              g0/2
 S2         g0/1       R9              g0/1
 </b>
 </pre>
+
+Here is an image from the example lab network diagram JPG file:
+![Example Network Diagram](example-network-diagram.jpg)
 
 You run the Python script, which generates a YAML file (Router_Configuration.yaml).
 
